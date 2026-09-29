@@ -1,0 +1,7 @@
+round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+calib,C0,adasind_019560.jpg,R1,na,MISSING,E1_annotator_error,P1,annotator,R02,Vật thể cao trên 40px nhưng chưa được vẽ box,rework,v1.0.0,Clinic thảo luận ngộ nhận về class
+calib,C0,adasind_019560.jpg,R2,na,MISSING,E1_annotator_error,P1,annotator,R02,Vật thể cao trên 40px,rework,v1.0.0,Clinic thảo luận ngộ nhận rider
+calib,C0,adasind_019560.jpg,R3,na,MISSING,E1_annotator_error,P2,annotator,R02,Đối tượng bị méo ở viền nhưng vẫn nhìn rõ,rework,v1.0.0,Clinic thảo luận méo ảnh rìa
+calib,C0,adasind_019560.jpg,R4,na,MISSING,,,,,,,,
+calib,C0,adasind_019560.jpg,R5,na,MISSING,,,,,,,,
+calib,C0,adasind_019560.jpg,R6,na,MISSING,,,,,,,,

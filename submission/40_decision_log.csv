@@ -1,1 +1,10 @@
 id,date,question,decision,rationale,status
+D01,2026-09-29,QA nhận về có đúng bài không,Lưu riêng received_review_B3-center.md,Mã F7CC-04EB khớp SHA256 bản r1,recorded
+D02,2026-09-29,QA 152940 nói vật nào,Yêu cầu định vị trước khi sửa,R5 Truck/R6 ThreeWheeler chưa chắc trùng mô tả xe máy/công nông,escalated
+D03,2026-09-29,QA trong repo đúng vòng không,Cần B4-edge hoặc xác nhận đổi vòng,team.json duong→manh nhưng QA hiện là B1-mid,escalated
+D04,2026-09-29,Truck hay Car ở 167700 L1/R4,Chờ phân xử R04,IoU 0.854 xác nhận cùng vùng nhưng chưa xác định class đúng,escalated
+D05,2026-09-29,Thiếu ego_body,Lập kế hoạch rework ba frame,R07 và selfqc; chưa có export v2,pending
+D06,2026-09-29,Checklist r1 đã làm trước reference chưa,Giữ nguyên checklist chưa tick và ghi giới hạn trình tự,Tại lúc mở reference để viết báo cáo checklist vẫn chưa hoàn tất; không hồi tố đánh dấu,recorded
+D07,2026-09-29,Vòng QA thực tế,duong review vanh/B1-mid; thay thế yêu cầu B4-edge ở D03,Người học xác nhận trực tiếp và cung cấp ZIP B1-mid,resolved
+D08,2026-09-29,Bản sau sửa,Khóa r1-v2.zip bằng 1879-C103,Matched 12→14; missing 6→4; spurious 1→1,recorded
+D09,2026-09-29,Checklist,Tick chín mục theo xác nhận người học; giữ cảnh báo chưa sửa,V2 vẫn thiếu ego_body và K12 có ba cặp; không coi tick là hết lỗi,recorded

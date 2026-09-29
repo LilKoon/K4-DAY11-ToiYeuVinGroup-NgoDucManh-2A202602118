@@ -1,6 +1,6 @@
 # Quan sát vạch ô đỗ
 
-- Hai vạch `parking_line` đã vẽ (mô tả vị trí trong ảnh): TODO
-- Một vạch/dấu sơn hoặc biên **không** vẽ, và vì sao: TODO
-- Polygon `free_space` dừng ở đâu; có phần bị che nào không: TODO
-- Ca chưa chắc cần hỏi người soát (nếu không có, ghi “không có”): TODO
+- Hai vạch `parking_line` đã vẽ (mô tả vị trí trong ảnh): Trên ảnh `parking-lot-core.jpg` (960 × 720 px), vạch thứ nhất là đoạn sơn trắng ngắn ở góc dưới bên trái, từ khoảng (25, 720) đến (29, 679); vạch thứ hai là đoạn sơn chéo ở giữa mép dưới, từ khoảng (532, 719) đến (409, 652). Đây là các đoạn sơn phân chia ô đỗ ở tiền cảnh; chỉ vẽ phần nhìn thấy, không kéo dài ra ngoài ảnh. Bản export còn có vạch thứ ba ở phía dưới bên phải, đi từ khoảng (698, 621), qua (863, 662), đến mép phải tại (960, 684).
+- Một vạch/dấu sơn hoặc biên **không** vẽ, và vì sao: Không gán `parking_line` cho đường biên ngang giữa mặt bãi và hàng rào/cây ở phía xa, khoảng y = 465–475. Đây là biên cảnh quan của bãi, không phải đoạn sơn chia một ô đỗ riêng lẻ.
+- Polygon `free_space` dừng ở đâu; có phần bị che nào không: Polygon bao dải mặt đường trống ở giữa ảnh, nằm giữa các hàng vạch đỗ phía xa và các vạch đỗ tiền cảnh. Biên trên đi từ khoảng (0, 576) ở mép trái đến (960, 515) ở mép phải; biên dưới đi từ khoảng (0, 683), qua (406, 653), (697, 623), đến (960, 593). Vùng đã chọn không bao xe đỏ ở phía xa, hàng rào, cây hay cột đèn. Không thấy vật cản che khuất rõ ràng bên trong dải này; polygon dừng ở mép ảnh và không suy diễn phần ngoài khung hình. `free_space` chỉ mô tả mặt đường trống nhìn thấy trên ảnh tĩnh, không xác nhận vùng xe có thể đi an toàn.
+- Ca chưa chắc cần hỏi người soát (nếu không có, ghi “không có”): Nhờ người soát kiểm tra biên trên của `free_space`, nhất là nửa phải ảnh, vì vạch sơn phía xa mờ và ranh giới giữa lối xe chạy với ô đỗ chưa thật rõ. Biên dưới polygon cũng đi sát đầu các vạch đỗ, đặc biệt gần (697, 623); cần kiểm tra ở mức phóng to để tránh lấn vào ô đỗ. Hai vạch ở mép dưới bị khung ảnh cắt, nên không kết luận chiều dài đầy đủ của chúng.

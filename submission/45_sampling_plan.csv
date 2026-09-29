@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,20,mất độ phủ điều kiện thông thường,Giả định độ phủ tương đương; chọn cảnh sáng rõ tách theo chuyến để làm đối chứng; Ca dùng chung từ main b1c9864: Lấy bối cảnh đường thẳng đủ sáng chuẩn mực
+front,hard,30,ngược sáng và vật nhỏ giao cắt,Ưu tiên kiểm thử ca khó; phân bổ ban đầu 50/camera cần điều chỉnh khi có dữ liệu thực; không dùng để ước lượng tỷ lệ lỗi; Ca dùng chung từ main b1c9864: Đèn xe đối diện lóa sáng hoặc xe cắt ngang đầu
+rear,normal,20,mất độ phủ điều kiện thông thường,Giả định độ phủ tương đương; chọn cảnh sáng rõ tách theo chuyến để làm đối chứng; Ca dùng chung từ main b1c9864: Bối cảnh phía sau trống
+rear,hard,30,người/xe cắt ngang khi lùi và ánh sáng yếu,Ưu tiên kiểm thử ca khó; phân bổ ban đầu 50/camera cần điều chỉnh khi có dữ liệu thực; không dùng để ước lượng tỷ lệ lỗi; Ca dùng chung từ main b1c9864: Bị phản chiếu góc khuất khi lùi xe
+left,normal,20,mất độ phủ điều kiện thông thường,Giả định độ phủ tương đương; chọn cảnh sáng rõ tách theo chuyến để làm đối chứng; Ca dùng chung từ main b1c9864: Xe chạy thẳng bên trái
+left,hard,30,xe hai bánh sát biên và seam bên trái,Ưu tiên kiểm thử ca khó; phân bổ ban đầu 50/camera cần điều chỉnh khi có dữ liệu thực; không dùng để ước lượng tỷ lệ lỗi; Ca dùng chung từ main b1c9864: Góc hông bị méo (distortion) nặng
+right,normal,20,mất độ phủ điều kiện thông thường,Giả định độ phủ tương đương; chọn cảnh sáng rõ tách theo chuyến để làm đối chứng; Ca dùng chung từ main b1c9864: Đường thẳng bên phải
+right,hard,30,người dắt xe và che khuất bên phải,Ưu tiên kiểm thử ca khó; phân bổ ban đầu 50/camera cần điều chỉnh khi có dữ liệu thực; không dùng để ước lượng tỷ lệ lỗi; Ca dùng chung từ main b1c9864: Xe máy tạt mép phải sát thân xe

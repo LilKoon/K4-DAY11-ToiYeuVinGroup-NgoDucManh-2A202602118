@@ -1,0 +1,9 @@
+round: rework
+slice: B3-center
+sha256: 1879c1031ee26bcb349c3bdea4ad2d65a11f8d8134039e79807c3977acf23816
+code: 1879-C103
+locked_at: 2026-09-29T19:38:02+07:00
+shapes: box=18, polygon=9
+prefill_kept: 2
+prefill_edited: 1
+new: 15
