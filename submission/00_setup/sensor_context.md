@@ -1,6 +1,5 @@
 # Sensor context
 
-- TODO — Rig: mô tả ngắn xe/camera gắn ở đâu theo hiểu biết của bạn từ ảnh (ADASIND không kèm tài liệu rig chi
-  tiết, ghi theo quan sát).
-- TODO — `ego_body` nhìn thấy ở đâu trong frame (góc capo, gương, tay lái...).
-- TODO — Vòng kính (lens circle) nằm ở vị trí nào trong ảnh, chiếm khoảng bao nhiêu phần khung hình.
+- Rig: Quan sát ba ảnh của slice `B1-mid` (`adasind_014670.jpg`, `adasind_032280.jpg`, `adasind_034080.jpg`), camera fisheye nhìn về phía đường phía trước, thấy tay lái và một phần người điều khiển ở góc dưới bên trái. Từ hình ảnh, có thể suy đoán camera được mang hoặc gắn trên phương tiện hai bánh, gần người điều khiển; chưa xác định được chính xác vị trí gá, độ cao hay góc lắp. Repo không cung cấp tài liệu rig/calibration chi tiết để xác nhận các thông số này. Đây là dữ liệu một camera ADASIND, không phải bộ ảnh đồng bộ front/rear/left/right của hệ thống SVM bốn camera.
+- `ego_body`: Cả ba frame đều thấy một phần phương tiện mang camera ở góc dưới bên trái, gồm tay lái/cụm đồng hồ và vùng tay, cánh tay của người điều khiển; frame `adasind_014670.jpg` còn thấy rõ một phần chân/quần ở sát đáy trái. Khi gán `ignore_region` với `reason=ego_body`, cần bám phần ego nhìn thấy theo guideline, tránh lấn ra mặt đường hoặc xe khác. Không nhầm người/xe đi phía trước với ego, và không dùng vùng đen ngoài vòng kính làm `ego_body`.
+- Vòng kính (lens circle): Vùng ảnh hữu ích có biên cong gần tròn, nằm gần giữa khung hình dọc. Cung trên và dưới hiện rõ; hai bên vòng kính bị mép ảnh cắt. Trên các ảnh này, vùng hữu ích kéo dài xấp xỉ từ 5–6% đến 89–90% chiều cao ảnh tại khu vực giữa, tức khoảng 84–85% chiều cao; đây là ước lượng bằng mắt, không phải tỷ lệ diện tích hay kết quả calibration. Vùng đen ngoài vòng kính tập trung ở phía trên và dưới. Cần soát `lens_border` theo biên thực tế từng frame; vật ở gần rìa có thể méo hoặc bị vòng kính/khung ảnh cắt.

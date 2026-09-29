@@ -1,0 +1,19 @@
+{
+  "members": [
+    "duong",
+    "manh",
+    "vanh"
+  ],
+  "assignments": {
+    "duong": "B3-center",
+    "manh": "B4-edge",
+    "vanh": "B1-mid"
+  },
+  "self": "vanh",
+  "slice": "B1-mid",
+  "degrade": [],
+  "current_slice": "C0",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": []
+}

@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,25,Kiểm độ phủ class và khoảng kích thước,Chọn ngẫu nhiên phân tầng theo chuyến và thời điểm; giữ mẫu cảnh thông thường để đối chiếu
+front,hard,30,Ngược sáng và rider chồng xe hoặc vật nhỏ xa,Tăng mẫu để phân xử class và hình học; giả thuyết cần kiểm trên dữ liệu bốn camera thật
+rear,normal,25,Thiếu nhãn người và xe khi quan sát phía sau,Phân tầng theo chuyến và bối cảnh đỗ hoặc di chuyển; không lấy toàn frame liên tiếp
+rear,hard,30,Vật bị cắt mép hoặc che khuất khi lùi và thiếu sáng,Ưu tiên kiểm vật nhỏ và thuộc tính truncated/occluded trong tình huống giả lập
+left,normal,20,Độ phủ xe hai bánh và người bên trái,Giữ tập nền riêng cho camera trái qua nhiều cảnh và thời điểm
+left,hard,25,Méo rìa và vật bị che ở seam front-left/rear-left,Chọn sự kiện độc lập để kiểm box và quy tắc liên camera; không tự ghép ID
+right,normal,20,Độ phủ người ven đường và xe bên phải,Giữ tập nền riêng cho camera phải; không dùng camera trái thay thế
+right,hard,25,Méo rìa và vật cắt mép ở seam front-right/rear-right,Giữ mẫu khó riêng để kiểm chính sách rider và seam; phân bổ không phải ước lượng tỷ lệ lỗi

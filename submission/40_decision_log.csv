@@ -1,1 +1,8 @@
 id,date,question,decision,rationale,status
+QC-P2-01,2026-09-29,Tự soát P2 chưa được ghi trước khóa,Bổ sung selfqc sau khóa và giữ bản 9BB2-E044 để đối chứng,submission/r1_craft/selfqc.md ghi các ca truncated và hình học cần soát; phạm vi review thu hẹp theo yêu cầu người nộp; reference đã mở nên không khai là QA mù,pending
+QA-IN-01,2026-09-29,014670 L6 Bus edge_zone=false khi bị cắt mép,Giữ thuộc tính hiện tại,Tâm box thuộc mid; truncated là quy tắc khác; xem submission/r3_diag/qa_response.md,kept
+QA-IN-02,2026-09-29,032280 L6 Car bị L7 che,Giữ occluded=true và chờ kiểm cạnh box nếu cần,R02 bám cực trị nhìn thấy; chưa có bằng chứng tọa độ để sửa; xem submission/r3_diag/qa_response.md,kept
+QA-IN-03,2026-09-29,034080 L1 Car sát mép trái,Giữ truncated=true và edge_zone=false,Tâm box thuộc mid; không đồng nhất chạm mép với zone=edge; xem submission/r3_diag/qa_response.md,kept
+QA-IN-04,2026-09-29,034080 L7 có thực sự bị cắt không,Đề nghị QA phân xử trước khi đổi truncated,Box sát mép phải và có cảnh báo; chưa đủ bằng chứng cơ thể bị cắt; đề nghị nội bộ chưa gửi bên ngoài; xem submission/r3_diag/qa_response.md,escalated
+V2-01,2026-09-29,Bản CVAT mới sau QA,Export và khóa v2 7C11-C8C9,Người nộp đổi thuộc tính tại 014670 Bus và 034080 Pedestrian; hình học giữ nguyên; xem submission/rework/delta.md,recorded
+V2-02,2026-09-29,Bus v2 L3 edge_zone=true nhưng zone tính là mid,Giữ đúng export người nộp và ghi cần xác nhận policy,Không coi thay đổi checkbox là cải thiện; xem submission/rework/delta.md,pending
