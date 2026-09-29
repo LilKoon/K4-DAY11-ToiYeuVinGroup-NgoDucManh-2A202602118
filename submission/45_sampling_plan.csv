@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,20,Thấp,Lấy bối cảnh đường thẳng đủ sáng chuẩn mực
+front,hard,30,Cao,Đèn xe đối diện lóa sáng hoặc xe cắt ngang đầu
+rear,normal,20,Thấp,Bối cảnh phía sau trống
+rear,hard,30,Cao,Bị phản chiếu góc khuất khi lùi xe
+left,normal,20,Thấp,Xe chạy thẳng bên trái
+left,hard,30,Cao,Góc hông bị méo (distortion) nặng
+right,normal,20,Thấp,Đường thẳng bên phải
+right,hard,30,Cao,Xe máy tạt mép phải sát thân xe

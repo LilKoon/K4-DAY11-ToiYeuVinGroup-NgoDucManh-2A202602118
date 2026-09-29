@@ -1,0 +1,9 @@
+round: calib
+slice: C0
+sha256: 424aabdfd9c625baf7a3a07025d3be5b3c474428dd39785d3289213a1c95b9fb
+code: 424A-ABDF
+locked_at: 2026-09-29T11:06:37+07:00
+shapes: polygon=2
+prefill_kept: 0
+prefill_edited: 0
+new: 0
